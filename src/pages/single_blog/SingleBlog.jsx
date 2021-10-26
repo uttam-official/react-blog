@@ -1,7 +1,8 @@
 import {useState,useEffect} from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,Link } from 'react-router-dom';
 import Axios from 'axios';
 import Navbar from '../../navbar/Navbar';
+import "./singleBlog.css";
 
 
 const SingleBlog = () => {
@@ -17,16 +18,33 @@ const SingleBlog = () => {
     return (
         <div>
             <Navbar/>
-            <div className="contaner">
+            <div className="container-fluid my-3">
                 <div className="row">
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-body">
-                                <h2 className="text-danger">{blog.title}</h2>
+                            {console.log(blog.category)}
+                                <h2 id="title">{blog.title}</h2>
+                                <p className="float-left text-secondary">
+                                    { blog.category.map((v)=>{
+                                        return (
+                                            <Link to="#"> {v} </Link>
+                                        );
+                                    })}</p>
+                                <p className="text-secondary float-right" id="author">Written By : <span id="author-link"><Link to="#">{blog.author}</Link></span></p>
+                                <img src={blog.imagelink} alt={blog.title} className="img img-fluid d-block mx-auto rounded"/>
+                                <p id="desc">{blog.desc}</p>
+
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4"></div>
+                    <div className="col-md-4">
+                        <div className="card">
+                            <div className="card-body">
+                                sidebar
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

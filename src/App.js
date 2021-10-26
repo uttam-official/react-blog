@@ -8,6 +8,8 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" component={Home} exact></Route>
+          <Route path="/contact" component={Home} exact></Route>
+          <Route path="/about" component={Home} exact></Route>
           <Route path="/:id" component={Single}></Route>
         </Switch>
       </Router>

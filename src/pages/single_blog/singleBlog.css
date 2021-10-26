@@ -1,0 +1,19 @@
+#title{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 1px 2px khaki;
+    color: red;
+}
+#desc{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: blanchedalmond;
+}
+#desc::first-letter{
+    color: blueviolet;
+    font-size: 3rem;
+    font-family: Georgia, serif;
+}

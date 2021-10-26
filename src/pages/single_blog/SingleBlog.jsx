@@ -23,14 +23,13 @@ const SingleBlog = () => {
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-body">
-                            {console.log(blog.category)}
                                 <h2 id="title">{blog.title}</h2>
-                                <p className="float-left text-secondary">
+                                {/* <p className="float-left text-secondary">
                                     { blog.category.map((v)=>{
                                         return (
                                             <Link to="#"> {v} </Link>
                                         );
-                                    })}</p>
+                                    })}</p> */}
                                 <p className="text-secondary float-right" id="author">Written By : <span id="author-link"><Link to="#">{blog.author}</Link></span></p>
                                 <img src={blog.imagelink} alt={blog.title} className="img img-fluid d-block mx-auto rounded"/>
                                 <p id="desc">{blog.desc}</p>

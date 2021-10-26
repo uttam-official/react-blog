@@ -5,7 +5,7 @@ import "./navbar.css";
 export default function Navbar(){
     return (
         <div className="navbar">
-            <h2>ReactBlog</h2>
+            <h2><Link to="/">ReactBlog</Link></h2>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/contact">Contact</Link></li>

@@ -20,8 +20,8 @@ const SingleBlog = () => {
             <Navbar/>
             <div className="container-fluid my-3">
                 <div className="row">
-                    <div className="col-md-8">
-                        <div className="card">
+                    <div className="col-md-8 mb-3">
+                        <div className="card h-100">
                             <div className="card-body">
                                 <h2 id="title">{blog.title}</h2>
                                 {/* <p className="float-left text-secondary">
@@ -37,10 +37,11 @@ const SingleBlog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
-                        <div className="card">
+                    <div className="col-md-4 mb-3">
+                        <div className="card h-100">
                             <div className="card-body">
-                                sidebar
+                                <h4 className="text-primary ">Category</h4>
+                                <span className="badge badge-danger">Movie </span>
                             </div>
                         </div>
                     </div>

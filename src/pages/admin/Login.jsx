@@ -29,7 +29,6 @@ const Login =()=>{
         try{
             e.preventDefault();
             const res=await axios.post('/admin/login',input);
-            console.log(res.data);
             if(res.data._id){
                 localStorage.setItem('userInfo',JSON.stringify(res.data));
                 history.push('/dashboard');
@@ -42,8 +41,8 @@ const Login =()=>{
     }
     return (
         <>
-            <center className="container">
-                <div className="card p-4" id="login">
+            <center className="container m-5">
+                <div className="card p-4" id="login" >
                     <form className="form-group" onSubmit={logIn}>
                         <label htmlFor="username" className="float-left">Username<span className="text-danger">*</span></label>
                         <input type="text" name="username" className="form-control" placeholder="Enter Your Username" onChange={changeInput} value={input.username}/>

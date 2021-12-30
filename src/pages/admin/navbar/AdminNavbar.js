@@ -19,7 +19,7 @@ export default function AdminNavbar(){
             <ul>
                 <li><Link to="/blog">Your Blog</Link></li>
                 <li><Link to="/add">Add Blog</Link></li>
-                <li><Link to="/login">logout</Link></li>
+                <li><Link to="/logout">logout</Link></li>
             </ul>
             
         </div>

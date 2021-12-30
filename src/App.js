@@ -5,6 +5,7 @@ import Login from "./pages/admin/Login";
 import Dashboard from "./pages/admin/Dashboard";
 import AllBlog from "./pages/admin/blog/AllBlog";
 import AddBlog from "./pages/admin/blog/AddBlog";
+import Logout from "./pages/admin/Logout";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/dashboard" component={Dashboard} exact></Route>
           <Route path="/blog" component={AllBlog} exact></Route>
           <Route path="/add" component={AddBlog} exact></Route>
+          <Route path="/logout" component={Logout} exact></Route>
           <Route path="/:id" component={Single}></Route>
         </Switch>
       </Router>

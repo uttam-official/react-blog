@@ -7,8 +7,9 @@ const AddBlog = () => {
     const history=useHistory();
     const user=localStorage.getItem('userInfo');
     const author=JSON.parse(user).username;
+    const token = JSON.parse(user).token;
     const [input,setInput]=useState({
-        title:"", desc:"", imagelink:"", category:'',author:author
+        title:"", desc:"", imagelink:"", category:'',author,token
     });
     const changeInput=(e)=>{
         const {name,value}=e.target;

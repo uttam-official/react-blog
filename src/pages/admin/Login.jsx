@@ -1,6 +1,6 @@
 import axios from "axios";
 import React,{ useState,useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import {useHistory } from "react-router-dom";
 import "./login.css";
 const Login =()=>{
     const history=useHistory();
@@ -11,7 +11,7 @@ const Login =()=>{
             }
         }
         checkLogin();
-    }, [history])
+    },[history])
     const [input,setInput]=useState({
         username:'',
         password:''
@@ -33,7 +33,7 @@ const Login =()=>{
                 localStorage.setItem('userInfo',JSON.stringify(res.data));
                 history.push('/dashboard');
             }else{
-                alert(res.data.message);
+                document.alert(res.data.message);
             }
         }catch(err){
             // console.log(err)

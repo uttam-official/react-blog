@@ -8,6 +8,8 @@ export default function Logout(){
             if (localStorage.getItem('userInfo')) {
             	localStorage.removeItem('userInfo');
                 history.push('/login');
+            }else{
+                history.push('/login');
             }
         }
         logOut();

@@ -14,7 +14,7 @@ const AddBlog = () => {
     });
     useEffect(()=>{
         const getBlogDetails=async ()=>{
-            if(params.id!=0){
+            if(params.id!=='0'){
                 const blog=await axios.get(`/blog/${params.id}`);
                 const {title,desc,imagelink,category}=blog.data;
                 setInput((lastInput)=>{

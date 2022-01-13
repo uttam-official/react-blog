@@ -17,3 +17,7 @@ ul{
 li{
     margin: 0 0.5rem;
 }
+.active_nav{
+    color:blueviolet;
+    text-decoration: underline;
+}

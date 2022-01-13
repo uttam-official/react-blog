@@ -1,0 +1,34 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: silver;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    
+}
+.child{
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(179, 223, 22);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+.loader{
+    width: 10rem;
+    height: 10rem;
+    border: solid 0.7rem seashell;
+    border-top: solid 0.7rem red;
+    border-radius: 50%;
+    animation: loader 1s linear infinite;
+}
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
